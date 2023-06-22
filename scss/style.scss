@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&display=swap');
+
+/*font-family: 'Barlow Semi Condensed', sans-serif;*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+img {
+    border-radius: 30px;
+    border: solid hsla(0, 0%, 100%, 0.5) 2px;
+    width: 35px;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: (auto);
+    grid-template-rows: (457px, 265px, 265px, 438px, 531px);
+    justify-content: center;
+    align-content: center;
+    gap: 25px;
+    margin: 15px;
+}
+
+/*Daniel Card*/
+.daniel {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 40px 35px 45px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.name-profile {
+    display: flex;
+    gap: 25px;
+}
+
+.name-main {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.name {
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.verified {
+    color: hsla(0, 0%, 100%, 0.5);
+    font-size: 0.9rem;
+}
+
+.text-main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.title {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.paragraph {
+    color: hsla(0, 0%, 100%, 0.452);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/*jonathan Card*/
+.jonathan {
+    background-color: hsl(217, 19%, 35%);
+    display: flex;
+    flex-direction: column;
+    padding: 35px 40px 35px 45px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*Jeanette*/
+.jeanette {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 40px 35px 45px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.name-dark {
+    color: hsl(217, 19%, 35%);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.title-dark {
+    color: hsl(217, 19%, 35%);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.paragraph-dark {
+    color: hsla(217, 19%, 35%, 0.658);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.verified-dark {
+    color: hsl(0, 0%, 63%);
+    font-size: 0.9rem;
+}
+
+/*Patrick Card*/
+.patrick {
+    background-color: hsl(219, 29%, 14%);
+    display: flex;
+    flex-direction: column;
+    padding: 35px 40px 35px 45px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*Kira Card*/
+.kira {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 40px 35px 45px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.attribution {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding-top: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: (1fr, 1fr);
+        grid-template-areas:
+            "box1 box1 box2 box5"
+            "box3 box4 box4 box5";
+        gap: 20px;
+        width: 1000px;
+    }
+
+    .daniel {
+        grid-area: box1;
+        padding: 25px 30px 15px 35px;
+    }
+
+    .jonathan {
+        grid-area: box2;
+        padding: 25px 30px 25px 35px;
+    }
+
+    .jeanette {
+        grid-area: box3;
+        padding: 25px 30px 25px 35px;
+    }
+
+    .patrick {
+        grid-area: box4;
+        padding: 25px 30px 25px 35px;
+    }
+
+    .kira {
+        grid-area: box5;
+        padding: 25px 30px 25px 35px;
+    }
+
+    .name {
+        font-size: 0.7rem;
+    }
+
+    .verified {
+        font-size: 0.5rem;
+    }
+
+    .title {
+        font-size: 1.1rem;
+    }
+
+    .paragraph {
+        font-size: 0.8rem;
+    }
+
+    .name-dark {
+        font-size: 0.6rem;
+    }
+
+    .title-dark {
+        font-size: 1.1rem;
+    }
+
+    .paragraph-dark {
+        font-size: 0.8rem;
+    }
+
+    .verified-dark {
+        font-size: 0.5rem;
+    }
+
+    img {
+        width: 23px;
+    }
+
+    .name-profile {
+        gap: 10px;
+    }
+
+    .name-main {
+        gap: 1px;
+    }
+
+    .text-main {
+        gap: 15px;
+        margin-top: 10px;
+    }
+}
